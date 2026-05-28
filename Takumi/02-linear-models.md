@@ -1,7 +1,4 @@
 # Linear Models and Example
-
-This note continues from the linear‑model example shown earlier (Figure 1‑19) and mirrors the style used in `00-introduction.md` and `01-batch.md`.
-
 ## A simple linear model
 
 A linear model predicts a numeric target as a weighted sum of input features plus an intercept. For a single input feature the model can be written as:
@@ -11,6 +8,9 @@ $$\text{life\_satisfaction} = \theta_0 + \theta_1 \times \text{GDP\_per\_capita}
 Training chooses parameters $\theta_0,\theta_1$ to minimize a loss (for example mean squared error) on the training set.
 
 *(Optional figure: the scatterplot with fitted linear regression line — include only if useful.)*
+
+![Linear model plot](../../assets/linear_plot.png)
+*Figure: Linear regression fit on the GDP vs life satisfaction dataset.*
 
 ## Example 1‑1: training and running a linear model
 
@@ -34,10 +34,8 @@ Key points from the example:
 
 ## Quick reproducible example (notes)
 
-You can run the provided example script with Python. It uses `pandas`, `scikit-learn`, and `matplotlib` to load the data, fit a model, and plot results.
+Here is the provided example script with Python. It uses `pandas`, `scikit-learn`, and `matplotlib` to load the data, fit a model, and plot results.
 
 ```bash
 python Takumi/01-linearMod.py
 ```
-
-If you want, I can embed a brief inline Scikit‑Learn example into this file (copying the script contents) or leave the example as a separate runnable script — which do you prefer?
